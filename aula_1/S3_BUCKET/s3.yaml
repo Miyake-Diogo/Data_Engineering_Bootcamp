@@ -1,0 +1,16 @@
+# Documentação Cloud Formation
+  # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
+Description: Criar um bucket no S3
+
+Resources:
+  MeuBucketS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: meu-primeiro-bucket-oliviabratcho
+      BucketEncryption: 
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+# Existem mais propriedades opcionais para um bucket S3 que você pode ver aqui:
+  # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html

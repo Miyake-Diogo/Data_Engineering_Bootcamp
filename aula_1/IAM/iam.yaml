@@ -1,3 +1,6 @@
+# Criação de IAM Roles e politicas para a função de Data Engineer
+# Link com as actions de acordo com os serviços:
+  # https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actions-resources-contextkeys.html
 Description: Cria grupo, funcao e politicas para engenheiro de dados
 
 Resources:

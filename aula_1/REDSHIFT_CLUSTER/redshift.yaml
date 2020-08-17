@@ -15,8 +15,8 @@ Resources:
       ClusterType: multi-node
       DBName: production
       Encrypted: true
-      MasterUsername: admin
-      MasterUserPassword: Admin1234 # Nunca coloque senhas de sistemas que irão para produção em templates
+      MasterUsername: admin_rs
+      MasterUserPassword: AdminAwsRS # Nunca coloque senhas de sistemas que irão para produção em templates
       # Uma boa prática aqui seria definir uma variável no seu CI/CD que sera inputada aqui durante a execução
       NodeType: dc2.large # https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html
       NumberOfNodes: 2
